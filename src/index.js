@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import FruitContainer from './FruitContainer';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+const fruits = ['apple', 'orange', 'banana', 'pear', 'pineapple', 'jicama',
+  'starfruit', 'peach', 'blueberry', 'strawberry', 'raspberry', 'tomato']
+
+console.log(fruits)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <h1>Fruits</h1>
+    <FruitContainer fruits={ fruits }/>
   </React.StrictMode>,
   document.getElementById('root')
 );
